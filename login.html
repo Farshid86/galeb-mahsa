@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورود</title>
+</head>
+<style>
+    @font-face {
+    font-family: "Vazir";
+    src: url("fonts/Vazir.woff2") format("woff2"),
+         url("fonts/Vazir.woff") format("woff");
+         font-weight: normal;
+         font-style: normal;
+         font-display: swap;
+}
+@font-face {
+    font-family: "Vazir";
+    src: url("fonts/Vazir-Bold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+*{
+    font-family: "Vazir";
+}
+
+body {
+   font-family: "Vazir";
+    background-color: var(--pink-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+:root {
+    --pink-primary: #ee3f79;
+    --pink-light: #fce4ec;
+    --text-dark: #333;
+    --gray-light: #f5f5f5;
+}
+
+.auth-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.auth-card h2 { 
+    color: var(--pink-primary); 
+    margin-bottom: 25px; 
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 30px;
+    border: 1px solid #ecaeae;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+input:hover{
+    border: 1px solid var(--pink-primary);
+}
+
+.btn-auth {
+    width: 100%;
+    padding: 12px;
+    background: var(--pink-primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn-auth:hover{
+    background-color: #ee3f79;
+}
+
+.link-text {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.link-text a { 
+    color: var(--pink-primary); 
+    text-decoration: none; 
+}
+</style>
+<body>
+         <div class="auth-card">
+        <h2>ورود به حساب</h2>
+        <form>
+            <input type="email" placeholder=" ایمیل یا شماره موبایل" required>
+            <input type="password" placeholder="رمز عبور" required>
+            <button type="submit" class="btn-auth">ورود</button>
+        </form>
+        <div class="link-text">
+            حساب ندارید؟ <a href="/reajester.html">ثبت‌نام کنید</a>
+        </div>
+    </div>
+</body>
+</html>
